@@ -1,0 +1,58 @@
+body {
+    background-image: linear-gradient(to bottom right, #722DA0, #E6B7F3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.glass-card {
+    background-color: unset !important;
+    background-image: linear-gradient(-30deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.06) 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-margin {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.floating-effect {
+    animation: floatingEffect 5s ease-in-out infinite;
+    max-height: 50vh;
+}
+
+@keyframes floatingEffect {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.spin-effect {
+    animation: spinEffect 30s linear infinite;
+}
+
+@keyframes spinEffect {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
