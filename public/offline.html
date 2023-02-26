@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-lt-installed="true">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/iconSolarExplorer.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#7A37A6">
+    <meta name="description"
+        content="Explore os planetas do nosso sistema solar de forma divertida com o nosso aplicativo web.">
+    <link rel="apple-touch-icon" href="/img/iconSolarExplorer.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Solar Explorer</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, #722da0, #e6b7f3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .containerMargin {
+            padding-bottom: 2rem;
+            padding-top: 2rem
+        }
+
+        .cardVidro {
+            background-color: initial !important;
+            background-image: linear-gradient(-30deg, hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .06) 60%);
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .animacaoEfeitoFlutuando {
+            -webkit-animation: animacaoEfeitoFlutuando 5s ease-in-out infinite;
+            animation: animacaoEfeitoFlutuando 5s ease-in-out infinite
+        }
+
+
+        @-webkit-keyframes animacaoEfeitoFlutuando {
+
+            0%,
+            to {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+
+            50% {
+                -webkit-transform: translateY(-20px);
+                transform: translateY(-20px)
+            }
+        }
+
+        @keyframes animacaoEfeitoFlutuando {
+
+            0%,
+            to {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+
+            50% {
+                -webkit-transform: translateY(-20px);
+                transform: translateY(-20px)
+            }
+        }
+
+        .animacaoEfeitoGirar {
+            -webkit-animation: animacaoEfeitoGirar 30s linear infinite;
+            animation: animacaoEfeitoGirar 30s linear infinite
+        }
+
+        @-webkit-keyframes animacaoEfeitoGirar {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes animacaoEfeitoGirar {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true"><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="css-yalksi">
+            <center>
+                <h1 class="MuiTypography-root MuiTypography-h3 css-18nzik text-white">Offline!</h1>
+                <p class="text-white">Você está sem acesso à internet ou sua conexão pode estar instável, infelizmente
+                    nosso aplicativo não funciona em modo offline.</p>
+            </center>
+        </div>
+    </div>
+    <scribe-shadow id="shadow-root-scribe-elem"
+        style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;">
+    </scribe-shadow>
+</body>
+
+
+</html>
