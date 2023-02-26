@@ -12,8 +12,11 @@ export default function Planet() {
 
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [msg, setMsg] = useState(null);
     const [planet, setPlanet] = useState([]);
+    
+    // eslint-disable-next-line
+    const [msg, setMsg] = useState(null);
+
 
     useEffect(() => {
         (async () => {
@@ -35,7 +38,7 @@ export default function Planet() {
                 setLoading(false);    
             }
         })();
-    }, []);
+    }, [params]);
 
     async function handleShare() {
         const responseImage = await fetch(planet?.imgUrl);

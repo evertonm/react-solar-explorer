@@ -16,8 +16,10 @@ export default function Planets() {
 
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [msg, setMsg] = useState(null);
     const [planets, setPlanets] = useState([]);
+
+    // eslint-disable-next-line
+    const [msg, setMsg] = useState(null);
 
     useEffect(() => {
         (async () => {
