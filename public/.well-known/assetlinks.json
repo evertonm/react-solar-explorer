@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.solarexplorer.twa",
+                     "sha256_cert_fingerprints": ["A5:E1:2E:CC:E7:6B:3F:49:4F:C3:9B:6C:25:45:02:24:26:D3:1A:99:85:86:C6:D5:EC:5B:5E:CF:A0:1D:C3:EA"] }
+      }
+]
